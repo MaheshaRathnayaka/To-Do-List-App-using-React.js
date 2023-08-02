@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Todo from './components/todo';
+//import "./todo.css";
 
 function App() {
+
+  //Adding background Image 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container border border-primary rounded mt-5'
+    style={{
+      background: `url(https://media.istockphoto.com/id/1341408852/video/colored-smoke-on-a-dark-background-blue-and-red-light-with-smoke.jpg?s=640x640&k=20&c=v2DQUY8IVbli_6FH_9KAs6YWRXlDdYiBJHfp7JFh7NY=)`,
+      backgroundSize: 'cover'
+    }}
+    >
+      <Todo/>
+
     </div>
   );
 }
